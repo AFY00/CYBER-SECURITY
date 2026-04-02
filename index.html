@@ -2,62 +2,99 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Benim Profesyonel Sayfam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER SECURITY | Portfolyo</title>
     
     <style>
-        /* Arka plan rengi */
+        /* 1. TEMEL SIFIRLAMA */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #f4f7f6; /* Açık gri/mavi tonu */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d1117; /* GitHub Karanlık Tema Rengi */
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+        /* 2. ÖZEL NAVİGASYON ÇUBUĞU */
+        .navbar {
+            background-color: #161b22;
+            display: flex;
+            justify-content: space-between; /* Sol ve sağ arası boşluk */
+            align-items: center;
+            padding: 20px 50px; /* Kenarlardan boşluk */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid #30363d;
+        }
+
+        /* Sol Üst Yazı */
+        .logo {
+            color: #58a6ff; /* Siber Güvenlik Mavisi */
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Orta ve Sağ Menü */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: auto; /* Menüyü sağa iter */
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: #8b949e;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            color: #58a6ff;
+            text-shadow: 0 0 8px #58a6ff; /* Parlama efekti */
+        }
+
+        /* 3. İÇERİK ALANI */
+        .hero {
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #161b22 0%, #0d1117 100%);
         }
 
         h1 {
-            color: #2c3e50; /* Koyu lacivert */
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 15px;
         }
 
-        /* İŞTE SENİN BUTONUNUN TASARIMI */
-        .ozel-buton {
-            background-color: #3498db; /* Butonun ana rengi (Mavi) */
-            color: white;             /* Yazı rengi */
-            padding: 15px 32px;       /* İç boşluk (Boyut) */
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;             /* Kenarlık yok */
-            border-radius: 8px;       /* Köşeleri yuvarla */
-            transition: 0.3s;         /* Geçiş efekti hızı */
-            box-shadow: 0 4px #2980b9; /* Alt gölge efekti */
+        .highlight {
+            color: #58a6ff;
         }
 
-        /* Fare üzerine geldiğinde ne olsun? */
-        .ozel-buton:hover {
-            background-color: #2980b9; /* Renk biraz koyulaşsın */
-            transform: translateY(-2px); /* Hafif yukarı kalksın */
+        .btn-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
         }
 
-        /* Tıklandığında ne olsun? */
-        .ozel-buton:active {
-            box-shadow: 0 2px #2980b9;
-            transform: translateY(2px); /* Aşağı basılmış hissi */
-        }
-    </style>
-</head>
-<body>
-
-    <h1>AFY00 Web Tasarım Denemesi</h1>
-    <p>Kendi tasarladığım butonlarım aşağıda:</p>
-
-    <button class="ozel-buton">Projelerim</button>
-    <button class="ozel-buton" style="background-color: #e74c3c; box-shadow: 0 4px #c0392b;">İletişim</button>
-
-</body>
-</html>
+        /* SENİN ÖZEL BUTONLARIN */
+        .btn {
+            padding: 12px 30px;
+            border-radius: 6
