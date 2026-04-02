@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Benim Profesyonel Sayfam</title>
+    
+    <style>
+        /* Arka plan rengi */
+        body {
+            background-color: #f4f7f6; /* Açık gri/mavi tonu */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
 
+        h1 {
+            color: #2c3e50; /* Koyu lacivert */
+        }
+
+        /* İŞTE SENİN BUTONUNUN TASARIMI */
+        .ozel-buton {
+            background-color: #3498db; /* Butonun ana rengi (Mavi) */
+            color: white;             /* Yazı rengi */
+            padding: 15px 32px;       /* İç boşluk (Boyut) */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;             /* Kenarlık yok */
+            border-radius: 8px;       /* Köşeleri yuvarla */
+            transition: 0.3s;         /* Geçiş efekti hızı */
+            box-shadow: 0 4px #2980b9; /* Alt gölge efekti */
+        }
+
+        /* Fare üzerine geldiğinde ne olsun? */
+        .ozel-buton:hover {
+            background-color: #2980b9; /* Renk biraz koyulaşsın */
+            transform: translateY(-2px); /* Hafif yukarı kalksın */
+        }
+
+        /* Tıklandığında ne olsun? */
+        .ozel-buton:active {
+            box-shadow: 0 2px #2980b9;
+            transform: translateY(2px); /* Aşağı basılmış hissi */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AFY00 Web Tasarım Denemesi</h1>
+    <p>Kendi tasarladığım butonlarım aşağıda:</p>
+
+    <button class="ozel-buton">Projelerim</button>
+    <button class="ozel-buton" style="background-color: #e74c3c; box-shadow: 0 4px #c0392b;">İletişim</button>
+
+</body>
+</html>
